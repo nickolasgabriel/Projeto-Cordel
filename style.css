@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Simply';
+    src: url('font/KGSimplytheBest.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Passion';
+    src: url('font/PassionOne-Regular.ttf') format('truetype');
+}
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Simply', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: 'Passion', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: gainsboro;
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+}
+header h1{
+    padding-top: 50px;
+    font-family: var(--fonte3);
+    font-size: 11vw;
+}
+header p{
+    padding-bottom: 50px;
+    font-family: var(--fonte1);
+    font-size: 2vw;
+}
+header a{
+    padding-left: 5px;
+    font-family: var(--fonte1);
+    text-decoration: none;
+    font-size: 2vw;
+    color: rgb(190, 190, 190);
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 40px 30px;
+    line-height: 2.5em;
+    font-size: 3vw;
+    font-family: var(--fonte2);
+    font-weight: bold;
+}
+section.fundoNormal{
+    background-color: white;
+}
+section.fundoImagem{
+    background-color: rgb(77, 77, 77);
+    box-shadow: inset 7px 7px 15px 0px rgba(0, 0, 0, 0.685);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section.fundoImagem#img1{
+    background-image: url(imagens/background001.jpg);
+}
+section.fundoImagem#img2{
+    background-image: url(imagens/background002.jpg);
+}
+section.fundoImagem > p{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 40%;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte1);
+    font-size: 1.5vw;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-size: 1.8vw;
+    font-weight: bold;
+}
